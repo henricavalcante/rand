@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <script>
+    function rand(e) {
+
+      var a = ['Rogerinho', 'Danilo', 'Henri', 'Wanderley', 'Rodolfo', 'Micael', 'Batusa'];
+        document.getElementsByTagName('body')[0].innerHTML = a[~~(e.keyCode - 13) && Math.ceil(Math.random() * a.length - 1)];
+    }
+    window.addEventListener('keypress', rand)
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
